@@ -1,0 +1,25 @@
+{
+	"name": "svelte-pdfjs-demo",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"pdfjs-dist": "^4.2.67",
+		"svelte": "^4.2.7",
+		"svelte-pdfjs": "^0.8.0",
+		"vite": "^5.0.3"
+	},
+	"type": "module",
+	"pnpm": {
+		"patchedDependencies": {
+			"svelte-pdfjs@0.8.0": "patches/svelte-pdfjs@0.8.0.patch"
+		}
+	}
+}
